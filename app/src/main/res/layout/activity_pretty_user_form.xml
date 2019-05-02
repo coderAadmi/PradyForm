@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:gravity="center"
+            app:title="User Registration Form"
+            app:titleTextColor="@android:color/white"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent">
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e6f1ff">
+
+            <RelativeLayout
+                android:background="@android:color/white"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="45dp"
+                    android:gravity="center"
+                    android:minWidth="310dp"
+                    android:text="Welcome To Prady's Registration Page"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic" />
+
+
+                <EditText
+                    android:id="@+id/userName"
+                    android:typeface="monospace"
+                    android:backgroundTint="#e6f1ff"
+                    android:drawableStart="@drawable/ic_user"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:background="@drawable/widget_bg"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:hint="    Username"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="145dp"
+                    android:layout_centerHorizontal="true" />
+
+                <EditText
+                    android:id="@+id/emailId"
+                    android:typeface="monospace"
+                    android:backgroundTint="#e6f1ff"
+                    android:drawableStart="@drawable/ic_mail"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:background="@drawable/widget_bg"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="210dp"
+                    android:hint="    Email Id"/>
+
+                <EditText
+                    android:id="@+id/phoneNo"
+                    android:typeface="monospace"
+                    android:backgroundTint="#e6f1ff"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:background="@drawable/widget_bg"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="275dp"
+                    android:hint="    Phone no."/>
+
+                <EditText
+                    android:id="@+id/password"
+                    android:backgroundTint="#e6f1ff"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:inputType="textPassword"
+                    android:paddingStart="10dp"
+                    android:background="@drawable/widget_bg"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="335dp"
+                    android:hint="         Password"/>
+
+                <EditText
+                    android:id="@+id/confirmedPAssword"
+                    android:typeface="monospace"
+                    android:backgroundTint="#e6f1ff"
+                    android:drawableStart="@drawable/ic_lock_conffirm"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:background="@drawable/widget_bg"
+                    android:layout_width="310dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="395dp"
+                    android:hint="    Confirm Password"/>
+
+                <Button
+                    android:id="@+id/submitButton"
+                    android:typeface="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="455dp"
+                    android:layout_marginBottom="85dp"
+                    android:background="@drawable/widget_bg"
+                    android:text="SUBMIT"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/colorAccent"/>
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</RelativeLayout>
