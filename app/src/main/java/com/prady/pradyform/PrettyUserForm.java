@@ -102,8 +102,8 @@ public class PrettyUserForm extends AppCompatActivity {
         editor.putString(USER_PASSWORD,password);
         editor.apply();
 
-        Toast.makeText(PrettyUserForm.this,"Info saved successfully",Toast.LENGTH_SHORT).show();
-
+        //Toast.makeText(PrettyUserForm.this,"Info saved successfully",Toast.LENGTH_SHORT).show();
+        thankYouUser();
 
     }
 
