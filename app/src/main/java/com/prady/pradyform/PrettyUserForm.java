@@ -103,7 +103,7 @@ public class PrettyUserForm extends AppCompatActivity {
         editor.apply();
 
         Toast.makeText(PrettyUserForm.this,"Info saved successfully",Toast.LENGTH_SHORT).show();
-        thankYouUser();
+        thankyouUser();
 
     }
 
