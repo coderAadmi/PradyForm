@@ -104,15 +104,12 @@ public class PrettyUserForm extends AppCompatActivity {
 
         Toast.makeText(PrettyUserForm.this,"Info saved successfully",Toast.LENGTH_SHORT).show();
         thankyouUser();
-
     }
 
     private void thankyouUser()
     {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext(),R.style.Theme_AppCompat_Dialog_Alert);
-        builder.setTitle(R.string.thankYou);
-        AlertDialog alertDialog = builder.create();
-        alertDialog.show();
+        ThankyouDialogFragment thankyouDialogFragment = new ThankyouDialogFragment();
+        thankyouDialogFragment.show(getSupportFragmentManager(),"POPUP");
 
     }
 }
