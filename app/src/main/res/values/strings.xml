@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">PradyForm</string>
+    <string name="thankYou">Thankyou User</string>
+
+    <string name="welcome">Welcome To Prady\'s Registration Page</string>
+    <string name="usernameHint">    Username</string>
+    <string name="confPwd">    Confirm Password</string>
+    <string name="password">         Password</string>
+    <string name="phone">         Phone no</string>
+    <string name="email">    Email Id</string>
 </resources>

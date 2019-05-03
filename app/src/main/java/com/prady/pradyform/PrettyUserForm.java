@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.PatternMatcher;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -102,6 +103,16 @@ public class PrettyUserForm extends AppCompatActivity {
         editor.apply();
 
         Toast.makeText(PrettyUserForm.this,"Info saved successfully",Toast.LENGTH_SHORT).show();
+
+
+    }
+
+    private void thankyouUser()
+    {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getApplicationContext(),R.style.Theme_AppCompat_Dialog_Alert);
+        builder.setTitle(R.string.thankYou);
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
 
     }
 }

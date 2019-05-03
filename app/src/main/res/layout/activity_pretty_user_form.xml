@@ -40,7 +40,7 @@
                     android:layout_marginTop="45dp"
                     android:gravity="center"
                     android:minWidth="310dp"
-                    android:text="Welcome To Prady's Registration Page"
+                    android:text="@string/welcome"
                     android:textColor="@color/colorAccent"
                     android:textSize="30sp"
                     android:textStyle="bold|italic" />
@@ -56,7 +56,8 @@
                     android:background="@drawable/widget_bg"
                     android:layout_width="310dp"
                     android:layout_height="40dp"
-                    android:hint="    Username"
+                    android:textAlignment="center"
+                    android:hint="@string/usernameHint"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="145dp"
                     android:layout_centerHorizontal="true" />
@@ -68,13 +69,14 @@
                     android:drawableStart="@drawable/ic_mail"
                     android:inputType="textEmailAddress"
                     android:padding="10dp"
+                    android:textAlignment="center"
                     android:background="@drawable/widget_bg"
                     android:layout_width="310dp"
                     android:layout_height="40dp"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="210dp"
-                    android:hint="    Email Id"/>
+                    android:hint="@string/email"/>
 
                 <EditText
                     android:id="@+id/phoneNo"
@@ -83,19 +85,21 @@
                     android:drawableStart="@drawable/ic_phone"
                     android:inputType="numberDecimal"
                     android:padding="10dp"
+                    android:textAlignment="center"
                     android:background="@drawable/widget_bg"
                     android:layout_width="310dp"
                     android:layout_height="40dp"
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="275dp"
-                    android:hint="    Phone no."/>
+                    android:hint="@string/phone"/>
 
                 <EditText
                     android:id="@+id/password"
                     android:backgroundTint="#e6f1ff"
                     android:drawableStart="@drawable/ic_lock"
                     android:inputType="textPassword"
+                    android:textAlignment="center"
                     android:paddingStart="10dp"
                     android:background="@drawable/widget_bg"
                     android:layout_width="310dp"
@@ -103,7 +107,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="335dp"
-                    android:hint="         Password"/>
+                    android:hint="@string/password"/>
 
                 <EditText
                     android:id="@+id/confirmedPAssword"
@@ -111,6 +115,7 @@
                     android:backgroundTint="#e6f1ff"
                     android:drawableStart="@drawable/ic_lock_conffirm"
                     android:inputType="textPassword"
+                    android:textAlignment="center"
                     android:padding="10dp"
                     android:background="@drawable/widget_bg"
                     android:layout_width="310dp"
@@ -118,7 +123,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginTop="395dp"
-                    android:hint="    Confirm Password"/>
+                    android:hint="@string/confPwd"/>
 
                 <Button
                     android:id="@+id/submitButton"
